@@ -1,6 +1,8 @@
 import './App.css';
 import Item from './components/Item';
 import ItemDate  from './components/ItemDate';
+import Card from './components/Card';
+
 
 function App() {
   
@@ -33,8 +35,10 @@ function App() {
 
 
   return (
-    <div>
-    <Item name={response[0].itemName}></Item>
+    <Card>
+    <Item name={response[0].itemName}>
+      kuna biswal
+    </Item>
     <ItemDate  day={response[0].itemDate} month={response[0].itemMonth} Year={response[0].itemYear}></ItemDate>
 
 
@@ -43,9 +47,10 @@ function App() {
 
     <Item name={response[2].itemName} ></Item>
     <ItemDate day={response[2].itemDate} month={response[2].itemMonth} Year={response[2].itemYear}></ItemDate>
-    <div className="App">
-      Hello Ji
-    </div></div>
+
+    <div className="App"> Hello Ji</div>
+    
+    </Card>
     
   );
 }

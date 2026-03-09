@@ -1,7 +1,12 @@
 import './Item.css'
 function Item(props) {
     const itemName=props.name;
-    return (<p className="Nirma">{itemName}</p>);
+    return ( <div>
+        <p className="Nirma">{itemName}</p>
+        {props.children}
+    </div>
+    
+    );
 }
 
 
