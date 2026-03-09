@@ -1,9 +1,9 @@
 import './Item.css'
-
 function Item() {
-
-    return (<p className="nirma"> Nirma</p>)
-
+    return (<p className="Nirma">Nirma</p>);
 }
+
+
+
 
 export default Item;
