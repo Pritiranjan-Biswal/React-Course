@@ -1,0 +1,21 @@
+.product-date {
+  background-color: #222;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 80px;
+}
+
+.product-date-month {
+  font-size: 14px;
+}
+
+.product-date-year {
+  font-size: 12px;
+}
+
+.product-date-date {
+  font-size: 22px;
+  font-weight: bold;
+}

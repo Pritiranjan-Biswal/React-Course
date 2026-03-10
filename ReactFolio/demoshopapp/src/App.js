@@ -1,32 +1,38 @@
 import './App.css';
-import Item from './components/Item';
-import ItemDate  from './components/ItemDate';
-import Card from './components/Card';
 
+
+import Card from './components/Card';
+import Products from './components/Products';
 
 function App() {
   
 
-  const response=[
+  const products=[
     {
-      itemName:"Nirma",
-      itemDate:202,
-      itemMonth:"Aug",
-      itemYear:2005
+      id:"p1",
+      title:"Nirma",
+      amount:100,
+      date:new Date(2021, 8, 10)
     },
 
     {
-      itemName:"Nirma2",
-      itemDate:203,
-      itemMonth:"jan",
-      itemYear:20059
+      id:"p2",
+      title:"Surf-Excel",
+      amount:200,
+      date:new Date(2021, 2, 10)
     },
 
     {
-      itemName:"Nirma3",
-      itemDate:204,
-      itemMonth:"feb",
-      itemYear:2007
+      id:"p3",
+      title:"Tide",
+      amount:300,
+      date:new Date(2021, 8, 10)
+    },
+    {
+      id:"p4",
+      title:"Maggie",
+      amount:"900",
+      date:new Date(2022, 8, 4)
     },
 
 
@@ -35,22 +41,9 @@ function App() {
 
 
   return (
-    <Card>
-    <Item name={response[0].itemName}>
-      kuna biswal
-    </Item>
-    <ItemDate  day={response[0].itemDate} month={response[0].itemMonth} Year={response[0].itemYear}></ItemDate>
-
-
-    <Item name={response[1].itemName}></Item>
-    <ItemDate  day={response[1].itemDate} month={response[1].itemMonth} Year={response[1].itemYear}></ItemDate>
-
-    <Item name={response[2].itemName} ></Item>
-    <ItemDate day={response[2].itemDate} month={response[2].itemMonth} Year={response[2].itemYear}></ItemDate>
-
-    <div className="App"> Hello Ji</div>
-    
-    </Card>
+   <div>
+    <Products items= {products} />
+   </div>
     
   );
 }
