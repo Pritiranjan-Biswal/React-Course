@@ -2,6 +2,7 @@ import './App.css';
 
 
 import Card from './components/Card';
+import NewProduct from './components/NewProduct';
 import Products from './components/Products';
 
 function App() {
@@ -38,10 +39,9 @@ function App() {
 
   ]
 
-
-
   return (
    <div>
+    <NewProduct/>
     <Products items= {products} />
    </div>
     
