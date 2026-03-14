@@ -19,6 +19,7 @@ const ProductItem = (props) => {
         <h2>{title}</h2>
       </div>
       <button onClick={clickHandler}>ADD TO CART</button>
+      
     </Card>
   );
 };
