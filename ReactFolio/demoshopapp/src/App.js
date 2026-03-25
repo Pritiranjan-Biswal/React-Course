@@ -37,11 +37,18 @@ function App() {
     },
 
 
-  ]
+  ];
+
+  function printProductData(date) {
+    console.log("I am inside app.js");
+    
+    console.log(data);
+    
+  }
 
   return (
    <div>
-    <NewProduct/>
+    <NewProduct pranay={printProductData} />
     <Products items= {products} />
    </div>
     

@@ -3,7 +3,7 @@ import './NewProduct';
 import { useState } from 'react';
 
 
-function ProductForm() {
+function ProductForm(props) {
 
     // const [fullProductInput, setfullProductInput]= useState({
     //     title:'',
@@ -43,10 +43,11 @@ function ProductForm() {
         title:newtitle,
         date:newdate
     };
-    console.log(productData);
+    //console.log(productData);
+
     setTitle('');
     setDate('');    
-    
+    props.onSaveProduct();
     }
 
     return(<form onSubmit={submitHandler}>
